@@ -1,0 +1,6 @@
+/* 1.由于设计图以1280px为准，先把container的最大宽度修改为1280 */
+@media screen and (min-width:1280px){
+    .container{
+        width: 1280px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1. 屏幕宽度>768 container:750 -> li(width:93.75px height:30px) * 8  -->
+    <!-- 2. 屏幕宽度<768 container:100% li:width:33.33% 一行放3个li -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 750px;
+            margin: 0 auto;
+        }
+        ul{
+            list-style: none;
+        }
+        .container ul li{
+            width: 93.75px;
+            height: 30px;
+            line-height: 30px;
+            background-color: darkkhaki;
+            float: left;
+        }
+        @media screen and (max-width:767px) {
+        .container{
+            width: 100%;
+        }
+        .container ul li{
+            width: 33.33%;
+            text-align: center;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>nav1</li>
+            <li>nav2</li>
+            <li>nav3</li>
+            <li>nav4</li>
+            <li>nav5</li>
+            <li>nav6</li>
+            <li>nav7</li>
+            <li>nav8</li>
+        </ul>
+    </div>
+</body>
+</html>
